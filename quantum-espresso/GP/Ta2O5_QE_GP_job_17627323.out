@@ -1,0 +1,50 @@
+
+scontrol show job 17627323
+JobId=17627323 JobName=Ta2O5_QE_Graham
+   UserId=jemmyhu(3000561) GroupId=jemmyhu(3000561) MCS_label=N/A
+   Priority=1806696 Nice=0 Account=def-jemmyhu_cpu QOS=normal
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=04:28:08 TimeLimit=3-00:00:00 TimeMin=N/A
+   SubmitTime=2024-03-08T12:10:26 EligibleTime=2024-03-08T12:10:26
+   AccrueTime=2024-03-08T12:10:26
+   StartTime=2024-03-08T12:42:48 EndTime=2024-03-11T13:42:48 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2024-03-08T12:42:48 Scheduler=Main
+   Partition=cpubase_bynode_b4 AllocNode:Sid=graham:11350
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=gra[251,461,488,509,514-515,547-548]
+   BatchHost=gra251
+   NumNodes=8 NumCPUs=256 NumTasks=256 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=256,mem=1000G,node=8,billing=256
+   AllocTRES=cpu=256,mem=1000G,node=8,billing=256
+   Socks/Node=* NtasksPerN:B:S:C=32:0:*:* CoreSpec=*
+   MinCPUsNode=32 MinMemoryNode=0 MinTmpDiskNode=0
+   Features=[broadwell|cascade] DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/home/jemmyhu/tests/test_QE/Benchmarks/submit_qe.sh
+   WorkDir=/home/jemmyhu/tests/test_QE/Benchmarks
+   StdErr=/home/jemmyhu/tests/test_QE/Benchmarks/Ta2O5_QE_Graham_job_17627323.err
+   StdIn=/dev/null
+   StdOut=/home/jemmyhu/tests/test_QE/Benchmarks/Ta2O5_QE_Graham_job_17627323.out
+   Power=
+
+sacct -j 17627323
+Account         User JobID                      Start                 End  AllocCPUS    Elapsed                      AllocTRES    CPUTime     AveRSS     MaxRSS MaxRSSTask MaxRSSNode        NodeList ExitCode                State
+---------- --------- ------------ ------------------- ------------------- ---------- ---------- ------------------------------ ---------- ---------- ---------- ---------- ---------- --------------- -------- --------------------
+def-jemmy+   jemmyhu 17627323     2024-03-08T12:42:48 2024-03-09T03:09:51        256   14:27:03 billing=256,cpu=256,mem=1000G+ 154-03:24:48                                             gra[251,461,48+      0:0            COMPLETED
+def-jemmy+           17627323.ba+ 2024-03-08T12:42:48 2024-03-09T03:09:51         32   14:27:03         cpu=32,mem=125G,node=1 19-06:25:36      6732K      6732K          0     gra251          gra251      0:0            COMPLETED
+def-jemmy+           17627323.ex+ 2024-03-08T12:42:48 2024-03-09T03:09:51        256   14:27:03 billing=256,cpu=256,mem=1000G+ 154-03:24:48          0          0          7     gra548 gra[251,461,48+      0:0            COMPLETED
+def-jemmy+           17627323.0   2024-03-08T12:42:51 2024-03-09T03:09:51        256   14:27:00       cpu=256,mem=1000G,node=8 154-03:12:00  471587168   3703648K         12     gra251 gra[251,461,48+      0:0            COMPLETED
+
+seff 17627323
+Job ID: 17627323
+Cluster: graham
+User/Group: jemmyhu/jemmyhu
+State: COMPLETED (exit code 0)
+Nodes: 8
+Cores per node: 32
+CPU Utilized: 154-00:50:55
+CPU Efficiency: 99.93% of 154-03:24:48 core-walltime
+Job Wall-clock time: 14:27:03
+Memory Utilized: 904.21 GB (estimated maximum)
+Memory Efficiency: 90.42% of 1000.00 GB (125.00 GB/node)
