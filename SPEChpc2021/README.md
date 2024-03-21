@@ -97,7 +97,9 @@ runhpc --config=gnu.cfg --flagsurl=$SPEC/config/flags/gcc_flags.xml --ranks 1024
 For convenience we provide a slurm submit script for the reference benchmark, [submit_hpc2021_small.sh](submit_hpc2021_small.sh). Modify its INSTALL_DIR, the number of nodes (or tasks), partition and account according to your system specifications and submit to slurm **submit_hpc2021_large.sh** to run the large workload benchmark.
 
 
-## Reporting Results SPEChpc 2021 Small Workload Benchmark outputs its results to the **$SPEC/result** directory. For example, our reference benchmark run wrote its results as **$SPEC/result/hpc2021_sml.txt** file. The following steps guide you on reporting the results from this file:
+## Reporting Results
+
+SPEChpc 2021 Small Workload Benchmark outputs its results to the **$SPEC/result** directory. For example, our reference benchmark run wrote its results as **$SPEC/result/hpc2021_sml.txt** file. The following steps guide you on reporting the results from this file:
 
    1. Open the file and read the SPEChpc 2021_sml_base score.
    2. Enter that score in the **SPEChpc** tab of the benchmark spreadsheet.
