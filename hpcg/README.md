@@ -196,8 +196,10 @@ For HPCG 3.1.0, with GCC compilers, one may encounter the following error:
    56 |   #pragma omp parallel default(none) shared(local_residual, v1v, v2v)
       |           ^~~
 ```
-A simple fix is to add `n` to the shared list.
-
+A simple fix is to add `n` to the shared list as follows
+```bash
+   #pragma omp parallel default(none) shared(local_residual, v1v, v2v, n)
+```
 If one obtained a version from Github and get the following compilation error
 ```bash
 ../src/ComputeResidual.cpp: In function ‘int ComputeResidual(local_int_t, const Vector&, const Vector&, double&)’:
