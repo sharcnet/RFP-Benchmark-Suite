@@ -22,7 +22,7 @@ Proponents involved in any ongoing Requests for Proposals (RFPs) are hereby inst
 - Specific instructions and input files can be found in the [quantum-espresso](quantum-espresso) directory.
 - The reported Quantum Espresso benchmark results must be run on 8 CPU nodes.
 
-### SPEChpc 2021 Large -- change to medium
+### SPEChpc 2021 Small
 
 - The Standard Performance Evaluation Corporation [SPEC](https://www.spec.org/) is a non-profit consortium that establishes, maintains and endorses standardized benchmarks and tools to evaluate performance for the newest generation of computing systems.
 - One of SPEC's benchmarks, [SPEChpc 2021 Benchmark Suites](https://www.spec.org/hpc2021/), provides a set of application benchmark suites using a comprehensive measure of real-world performance for the state-of-the-art HPC systems. They offer well-selected science and engineering codes that are representative of HPC workloads and are portable across CPU and accelerators, along with certain fair comparative performance metrics.
