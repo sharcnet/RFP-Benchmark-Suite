@@ -90,7 +90,7 @@ IOR outputs its results to standard output which the reference scripts redirect 
    1. Open the file and double check the options match the required ones for each of the cases run. 
    2. Scroll down to the **Results:** session and collect at the end of it the read and write maximum values in MB per second for the two test iterations.
    3. Scroll down even further to the **Summary of all tests:** session and collect the maximum read and write values for IOPs in number of input/output operations per second.
-   4. Enter those values in the **HPL,IOR** tab of the LP2BM Schedule G spreadsheet.
+   4. Enter those values in the **HPL,IOR** tab of the Benchmark_Results.xlsx spreadsheet.
    5. Repeat the process for transfer sizes of 1MB, 4MB and 16MB for each of the 4 cases mentioned above.
 
 All makefiles, scripts, environment settings, and source code patches (if any), along with the raw output of the benchmark runs must be provided with the response. Sample output for the reference benchmark can be found at the [sample_output](sample_output) directory.

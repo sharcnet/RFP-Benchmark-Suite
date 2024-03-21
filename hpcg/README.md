@@ -249,7 +249,7 @@ GFLOP/s value. HPCG will also self report a VALID or INVALID result. Only VALID 
 
 The best GFLOP/s value in the Final Summary of all test runs 
 should be reported in the "HPCG" tab of 
-the `Benchmark_Scores.xlsx` spreadsheet. 
+the `Benchmark_Results.xlsx` spreadsheet. 
 Results from runs of different configurations shall be reported in the table of
 Appendix.
 
