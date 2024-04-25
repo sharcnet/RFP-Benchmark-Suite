@@ -94,7 +94,7 @@ The basic command to run the small workload is as follows:
 runhpc --config=gnu.cfg --flagsurl=$SPEC/config/flags/gcc_flags.xml --ranks 1024 --reportable --tune=base --pmodel MPI small
 
 ``` 
-For convenience we provide a slurm submit script for the reference benchmark, [submit_hpc2021_small.sh](submit_hpc2021_small.sh). Modify its INSTALL_DIR, the number of nodes (or tasks), partition and account according to your system specifications and submit to slurm **submit_hpc2021_large.sh** to run the large workload benchmark.
+For convenience we provide a slurm submit script for the reference benchmark, [submit_hpc2021_small.sh](submit_hpc2021_small.sh). Modify its INSTALL_DIR, the number of nodes (or tasks), partition and account according to your system specifications and submit to slurm **submit_hpc2021_small_N8_n256.sh** to run the small workload benchmark.
 
 
 ## Reporting Results
